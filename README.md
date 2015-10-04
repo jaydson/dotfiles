@@ -1,7 +1,7 @@
 # Jaydson's dotfiles
 
 ## Warning
-This is *my* personal dotfiles and it may not work as expected in your machine, perhaps you can try it.  
+This is **my** personal dotfiles and it may not work as expected in your machine, perhaps you can try it.  
 My current SO is [Manjaro](https://manjaro.github.io/), an awesome Arch Linux based distribution.  
 
 ## Install
