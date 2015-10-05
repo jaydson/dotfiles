@@ -138,3 +138,9 @@ colors() {
 }
 
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
+
+export NVM_DIR="/home/jaydson/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# aliases
+source ~/dotfiles/system/.alias

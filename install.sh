@@ -1,5 +1,6 @@
-########## Variables
+#!/bin/bash
 
+########## Variables
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
 files=".bashrc .vimrc .vim"        # list of files/folders to symlink in homedir
@@ -24,5 +25,11 @@ for file in $files; do
     ln -s $dir/$file ~/$file
 done
 
-source ~/.bashrc
-source ~/.vimrc
+#nvm
+if ! nvm="$(type -p "$nvm")" || [ -z "$nvm" ]; then
+	echo "NAO TEM NVM"
+fi
+#curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.28.0/install.sh | bash
+
+source ~/dotfiles/.bashrc
+#source ~/.vimrc
